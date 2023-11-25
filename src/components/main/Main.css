@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    width: 100%;
+    background: url(../../assets/bg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}

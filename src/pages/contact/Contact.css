@@ -1,0 +1,127 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 2rem;
+  box-sizing: border-box;
+}
+.conContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: inset 0 0 1rem white;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.conContainer > form {
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+}
+.txtField > input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+
+.txtField > input {
+  color: white;
+  height: 3rem;
+  width: 30vw;
+  margin: 0.5rem;
+  outline: none;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: transparent;
+}
+.txtArea > textarea::placeholder {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.txtArea > textarea {
+  color: white;
+  height: 13rem;
+  width: 45vw;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: start;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid white;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  background: transparent;
+  resize: none;
+}
+button {
+  margin-top: 1rem;
+  width: 20vw;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-image: linear-gradient(
+    89.7deg,
+    rgba(223, 0, 0, 1) 2.7%,
+    rgba(214, 91, 0, 1) 15.1%,
+    rgba(233, 245, 0, 1) 29.5%,
+    rgba(23, 255, 17, 1) 45.8%,
+    rgba(29, 255, 255, 1) 61.5%,
+    rgba(5, 17, 255, 1) 76.4%,
+    rgba(202, 0, 253, 1) 92.4%
+  );
+  transition: 0.4s;
+  cursor: pointer;
+  animation-duration: 1750ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: button-shadow-throb;
+  animation-timing-function: linear;
+}
+button:hover {
+  transform: scale(1.1);
+}
+@keyframes button-shadow-throb {
+  0% {
+    box-shadow: 0px 0px 0px 0px #007cff80, 0px 0px 0px 0px #007cff80,
+      0px 0px 0px 0px #007cff80;
+  }
+  15% {
+    box-shadow: 0px 0px 0px 0px #007cff80, 0px 0px 0px 0px #007cff80,
+      0px 0px 0px 5px #007cff80;
+  }
+  30% {
+    box-shadow: 0px 0px 0px 0px #007cff80, 0px 0px 0px 5px #007cff80,
+      0px 0px 0px 10px #007cff40;
+  }
+  45% {
+    box-shadow: 0px 0px 0px 5px #007cff80, 0px 0px 0px 10px #007cff40,
+      0px 0px 0px 15px #007cff20;
+  }
+
+  60% {
+    box-shadow: 0px 0px 0px 10px #007cff40, 0px 0px 0px 15px #007cff20,
+      0px 0px 15px 15px #007cff00;
+  }
+  75% {
+    box-shadow: 0px 0px 0px 15px #007cff20, 0px 0px 15px 15px #007cff00,
+      0px 0px 15px 15px #007cff00;
+  }
+  90% {
+    box-shadow: 0px 0px 15px 15px #007cff00, 0px 0px 15px 15px #007cff00,
+      0px 0px 15px 15px #007cff00;
+  }
+  100% {
+    box-shadow: 0px 0px 15px 15px #007cff00, 0px 0px 15px 15px #007cff00,
+      0px 0px 15px 15px #007cff00;
+  }
+}

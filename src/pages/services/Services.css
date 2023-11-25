@@ -1,0 +1,168 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+}
+.heading {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.services {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: inset 0 0 1rem white;
+  overflow: hidden;
+  margin: 1rem;
+}
+.logosr > img {
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.srdetails {
+  padding: 1rem;
+}
+.srdetails h2 {
+  color: gold;
+  font-size: 1.5rem;
+}
+.lidiv {
+  padding-left: 1.1rem;
+  line-height: 1.5rem;
+}
+.lidiv li {
+  list-style: disc;
+}
+.srdetails p {
+  line-height: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .srdetails p {
+    line-height: 1rem;
+  }
+  .srdetails h2 {
+    font-size: 1.1rem;
+  }
+  .srdetails {
+    padding: 2rem 0;
+  }
+  .logosr > img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .srdetails p {
+    line-height: 15px;
+  }
+  .srdetails h2 {
+    font-size: 1rem;
+  }
+  .srdetails {
+    padding: 4rem 0;
+  }
+  .logosr > img {
+    width: 300px;
+    height: 400px;
+  }
+  .lidiv {
+    padding-left: 1rem;
+    line-height: 1.1rem;
+  }
+}
+@media (max-width: 320px) {
+  .srdetails p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .srdetails h2 {
+    font-size: 15px;
+  }
+  .srdetails {
+  }
+  .logosr > img {
+    width: 150px;
+    height: 150px;
+  }
+  .lidiv {
+    padding-left: 0.5rem;
+    line-height: 1rem;
+    font-size: 10px;
+  }
+  .services {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .srdetails p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .srdetails h2 {
+    font-size: 20px;
+  }
+  .srdetails {
+    padding: 0;
+  }
+  .logosr > img {
+    width: 250px;
+    height: 240px;
+  }
+  .lidiv {
+    padding: 0;
+    line-height: 1rem;
+    font-size: 10px;
+  }
+  .services {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .lidiv li {
+    list-style: none;
+  }
+}
+@media (max-width: 768px) {
+  .srdetails p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .srdetails h2 {
+    font-size: 20px;
+  }
+  .srdetails {
+    padding: 0;
+  }
+  .logosr > img {
+    width: 300px;
+    height: 280px;
+  }
+  .lidiv {
+    padding: 0;
+    line-height: 1rem;
+    font-size: 15px;
+  }
+  .services {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .lidiv li {
+    list-style: none;
+  }
+}
